@@ -219,7 +219,7 @@ a {
     background-image: url(../media/bg/bg-curvy-mobile.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 10%;
   }
 
@@ -320,10 +320,6 @@ a {
     font-size: 2.5em;
   }
 
-  p {
-    font-size: 1.2em;
-  }
-
   /* Header Wrapper */
   .header-wrapper>.header-navigation {
     padding: 5%;
@@ -337,7 +333,7 @@ a {
     background-image: url(../media/bg/bg-curvy-desktop.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 0 8%;
   }
 
@@ -349,6 +345,10 @@ a {
     padding: 0 22%;
   }
 
+  .header-wrapper>.intro-wrapper>.intro-text p {
+padding: 0 14%;
+}
+
   .header-wrapper>.intro-wrapper>.intro-button button {
     width: 240px;
     margin-top: 20px;
@@ -358,8 +358,8 @@ a {
   .features-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 75px;
-    grid-row-gap: 75px;
+    grid-column-gap: 150px;
+    grid-row-gap: 150px;
     justify-content: center;
     align-items: baseline;
     padding: 10% 15%;
